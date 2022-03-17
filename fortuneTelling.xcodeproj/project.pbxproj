@@ -13,6 +13,11 @@
 		6409D3FC27D1DC77004A8DE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6409D3FA27D1DC77004A8DE0 /* Main.storyboard */; };
 		6409D3FE27D1DC77004A8DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6409D3FD27D1DC77004A8DE0 /* Assets.xcassets */; };
 		6409D40127D1DC77004A8DE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6409D3FF27D1DC77004A8DE0 /* LaunchScreen.storyboard */; };
+		6409D40B27D1DCE7004A8DE0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6409D40A27D1DCE7004A8DE0 /* AudioToolbox.framework */; };
+		64535F9927E1DAE00084E199 /* ShellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64535F9827E1DAE00084E199 /* ShellViewController.swift */; };
+		64535F9B27E1E20C0084E199 /* BallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64535F9A27E1E20C0084E199 /* BallViewController.swift */; };
+		64535F9D27E1E6B90084E199 /* AskBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64535F9C27E1E6B90084E199 /* AskBallViewController.swift */; };
+		64535F9F27E1F8380084E199 /* AskFlowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64535F9E27E1F8380084E199 /* AskFlowerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,12 @@
 		6409D3FD27D1DC77004A8DE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6409D40027D1DC77004A8DE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6409D40227D1DC77004A8DE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6409D40827D1DCE7004A8DE0 /* fortuneTelling.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fortuneTelling.entitlements; sourceTree = "<group>"; };
+		6409D40A27D1DCE7004A8DE0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		64535F9827E1DAE00084E199 /* ShellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellViewController.swift; sourceTree = "<group>"; };
+		64535F9A27E1E20C0084E199 /* BallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallViewController.swift; sourceTree = "<group>"; };
+		64535F9C27E1E6B90084E199 /* AskBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskBallViewController.swift; sourceTree = "<group>"; };
+		64535F9E27E1F8380084E199 /* AskFlowerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskFlowerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6409D40B27D1DCE7004A8DE0 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +52,12 @@
 		6409D3E827D1DC77004A8DE0 = {
 			isa = PBXGroup;
 			children = (
+				64535F9C27E1E6B90084E199 /* AskBallViewController.swift */,
+				64535F9E27E1F8380084E199 /* AskFlowerViewController.swift */,
+				64535F9A27E1E20C0084E199 /* BallViewController.swift */,
 				6409D3F327D1DC77004A8DE0 /* fortuneTelling */,
 				6409D3F227D1DC77004A8DE0 /* Products */,
+				6409D40927D1DCE7004A8DE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +72,25 @@
 		6409D3F327D1DC77004A8DE0 /* fortuneTelling */ = {
 			isa = PBXGroup;
 			children = (
+				6409D40827D1DCE7004A8DE0 /* fortuneTelling.entitlements */,
 				6409D3F427D1DC77004A8DE0 /* AppDelegate.swift */,
 				6409D3F627D1DC77004A8DE0 /* SceneDelegate.swift */,
 				6409D3F827D1DC77004A8DE0 /* ViewController.swift */,
+				64535F9827E1DAE00084E199 /* ShellViewController.swift */,
 				6409D3FA27D1DC77004A8DE0 /* Main.storyboard */,
 				6409D3FD27D1DC77004A8DE0 /* Assets.xcassets */,
 				6409D3FF27D1DC77004A8DE0 /* LaunchScreen.storyboard */,
 				6409D40227D1DC77004A8DE0 /* Info.plist */,
 			);
 			path = fortuneTelling;
+			sourceTree = "<group>";
+		};
+		6409D40927D1DCE7004A8DE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6409D40A27D1DCE7004A8DE0 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +165,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6409D3F927D1DC77004A8DE0 /* ViewController.swift in Sources */,
+				64535F9D27E1E6B90084E199 /* AskBallViewController.swift in Sources */,
+				64535F9F27E1F8380084E199 /* AskFlowerViewController.swift in Sources */,
 				6409D3F527D1DC77004A8DE0 /* AppDelegate.swift in Sources */,
 				6409D3F727D1DC77004A8DE0 /* SceneDelegate.swift in Sources */,
+				64535F9927E1DAE00084E199 /* ShellViewController.swift in Sources */,
+				64535F9B27E1E20C0084E199 /* BallViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = fortuneTelling/fortuneTelling.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z4822F8J4X;
@@ -315,6 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = fortuneTelling/fortuneTelling.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z4822F8J4X;
